@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  score: 1
+  wine_type: one
+  food_subtype: one
+
+two:
+  score: 1
+  wine_type: two
+  food_subtype: two

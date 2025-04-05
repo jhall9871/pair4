@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Pairing scores</h1>
+
+<div id="pairing_scores">
+  <% @pairing_scores.each do |pairing_score| %>
+    <%= render pairing_score %>
+    <p>
+      <%= link_to "Show this pairing score", pairing_score %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New pairing score", new_pairing_score_path %>

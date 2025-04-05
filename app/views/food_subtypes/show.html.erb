@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @food_subtype %>
+
+<div>
+  <%= link_to "Edit this food subtype", edit_food_subtype_path(@food_subtype) %> |
+  <%= link_to "Back to food subtypes", food_subtypes_path %>
+
+  <%= button_to "Destroy this food subtype", @food_subtype, method: :delete %>
+</div>

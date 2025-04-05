@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @wine_subtype %>
+
+<div>
+  <%= link_to "Edit this wine subtype", edit_wine_subtype_path(@wine_subtype) %> |
+  <%= link_to "Back to wine subtypes", wine_subtypes_path %>
+
+  <%= button_to "Destroy this wine subtype", @wine_subtype, method: :delete %>
+</div>

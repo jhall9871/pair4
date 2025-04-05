@@ -1,0 +1,32 @@
+<%= form_with(model: pairing_score) do |form| %>
+  <% if pairing_score.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(pairing_score.errors.count, "error") %> prohibited this pairing_score from being saved:</h2>
+
+      <ul>
+        <% pairing_score.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :score, style: "display: block" %>
+    <%= form.number_field :score %>
+  </div>
+
+  <div>
+    <%= form.label :wine_type_id, style: "display: block" %>
+    <%= form.text_field :wine_type_id %>
+  </div>
+
+  <div>
+    <%= form.label :food_subtype_id, style: "display: block" %>
+    <%= form.text_field :food_subtype_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
