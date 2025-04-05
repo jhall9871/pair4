@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Bottle types</h1>
+
+<div id="bottle_types">
+  <% @bottle_types.each do |bottle_type| %>
+    <%= render bottle_type %>
+    <p>
+      <%= link_to "Show this bottle type", bottle_type %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New bottle type", new_bottle_type_path %>

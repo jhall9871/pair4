@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :bottle_types
   resources :foods
   resources :food_subtypes
   resources :food_types
