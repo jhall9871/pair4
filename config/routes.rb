@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
+  resources :bottle_types
+  resources :foods
+  resources :food_subtypes
+  resources :food_types
+  resources :pairing_scores
+  resources :wine_subtypes
+  resources :wine_types
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
+  get 'pairing_matrix', to: 'pairing_matrix#show'
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
